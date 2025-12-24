@@ -61,7 +61,7 @@ export default function App() {
         <input
           className="placeholder:text-black dark:placeholder:text-white border-2 dark:text-white border-black dark:border-white p-2 rounded-lg"
           type="text"
-          placeholder="Add todo"
+          placeholder="Add todo" 
           value={text}
           onChange={(e) => {
             setText(e.target.value);
@@ -105,7 +105,7 @@ export default function App() {
               </button>
             </p>
           );
-        })}
+        })};
       </div>
     </div>
   );
