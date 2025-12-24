@@ -39,7 +39,7 @@ export default function App() {
         darkMode ? "dark" : ""
       } h-screen w-screen flex flex-col items-center justify-center bg-gray-200  dark:bg-black space-y-2 `}
     >
-      <div className="space-x-2 bg-gray-600 p-2 rounded-lg ">
+      <div className="space-x-6 bg-gray-600 p-2 rounded-lg ">
         <button
           className="hover:bg-white rounded-sm dark:hover:bg-gray-700"
           onClick={() => {
@@ -61,7 +61,7 @@ export default function App() {
         <input
           className="placeholder:text-black dark:placeholder:text-white border-2 dark:text-white border-black dark:border-white p-2 rounded-lg"
           type="text"
-          placeholder="Add todo" 
+          placeholder="Add todo"
           value={text}
           onChange={(e) => {
             setText(e.target.value);
@@ -77,7 +77,7 @@ export default function App() {
       <div>
         {todos.map((todo) => {
           return (
-            <p className="space-x-3" key={todo.id}>
+            <p className="space-x-3 space-y-2" key={todo.id}>
               <span
                 className={`px-4  py-2 rounded ${
                   todo.done
@@ -105,7 +105,7 @@ export default function App() {
               </button>
             </p>
           );
-        })};
+        })}
       </div>
     </div>
   );
